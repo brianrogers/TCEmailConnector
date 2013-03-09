@@ -10,7 +10,7 @@ class LogSenderHandler(InboundMailHandler):
     def receive(self, mail_message):
 
     	tc_url = 'http://dev.cloud.scorm.com/pdl/TCAPI/statements'
-    	tc_auth = 'Basic '+ base64.b64encode('brian.rogers@scorm.com:scorm2004')
+    	tc_auth = 'Basic '+ base64.b64encode('brian.rogers@tincanapi.com:password')
 
         logging.info("Received a message from: " + mail_message.sender)
         logging.info("message subject: " + mail_message.subject)
