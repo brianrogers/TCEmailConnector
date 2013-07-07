@@ -9,8 +9,8 @@ from google.appengine.api import urlfetch
 class LogSenderHandler(InboundMailHandler):
     def receive(self, mail_message):
 
-    	tc_url = 'http://dev.cloud.scorm.com/pdl/TCAPI/statements'
-    	tc_auth = 'Basic '+ base64.b64encode('brian.rogers@tincanapi.com:password')
+    	tc_url = 'http://lrs.tld/TCAPI/statements'
+    	tc_auth = 'Basic '+ base64.b64encode('user@example.com:password')
 
         logging.info("Received a message from: " + mail_message.sender)
         logging.info("message subject: " + mail_message.subject)
