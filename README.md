@@ -8,5 +8,3 @@ This is just an example and would need to be edited to server a more specific pu
 ##Installation
 Add the files to your GAE python application and use the supplied GAE email address for your account.
 
-##License
-MIT License
